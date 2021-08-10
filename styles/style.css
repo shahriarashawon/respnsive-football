@@ -1,0 +1,301 @@
+/* common styles or utilities */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/*--------------
+          navigation bar styles
+                 ------------------- */
+
+.left-element{
+    text-decoration: none;
+    word-spacing: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    padding-left: 10px;
+   padding-top: 20px;
+   position: relative;
+   top: 30px;
+   left: 40px;
+}
+
+.left-element:hover {
+    color: rgb(168, 162, 162);
+    text-shadow: 2px 5px 20px rgb(1, 39, 1);
+}
+
+.right-element:hover {
+    color: rgb(194, 190, 190);
+    text-shadow: 2px 5px 13px rgb(1, 29, 1);
+}
+.right-element{
+    text-decoration: none;
+    position: relative;
+    color: rgb(255, 251, 251);
+    font-size: 0.9em;
+    padding: 20px;
+    border-radius: 20px;
+    top: 30px;
+    left: 350px;
+    background-color: rgb(7, 78, 7);
+}
+.navigation-bar{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+     grid-column-gap: 300px; 
+    background-color: darkgreen;
+}
+
+/*--------------
+     First slide's styles
+               ----------------- */
+
+.first-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 650px;
+    background-color: darkgreen;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.introduction-one{
+    color: darkolivegreen;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+    padding-left: 50px;
+    cursor: pointer;
+    text-shadow: 8px 2px 23px black;
+}
+.introduction-two{
+    color: darkolivegreen;
+    font-family: 'Courier New', Courier, monospace ;
+    font-size: 2em;
+    margin-left: 30px;
+    cursor: pointer;
+    text-shadow: 8px 2px 23px black;
+}
+.introduction-three{
+        color: darkolivegreen;
+        font-family: 'Courier New', Courier, monospace ;
+        font-size: 3em;
+        padding-left: 10px;
+        cursor: pointer;
+        text-shadow: 8px 2px 23px rgb(0, 0, 0);
+}
+.introduction-one:hover {
+    color: rgb(68, 92, 28);
+
+    text-shadow: 8px 2px 23px white;
+    
+}
+.introduction-two:hover {
+    color: rgb(68, 92, 28);
+    text-shadow: 8px 2px 23px white;
+    
+}
+.introduction-three:hover {
+    color: rgb(68, 92, 28);
+    text-shadow: 8px 2px 23px white;
+    
+}
+.link-button{
+    color: white;
+    text-decoration: none;
+    background-image:linear-gradient(to bottom, #cfab09 0%, #11d88c 100%);
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 25px;
+    
+}
+.live-link:hover{
+    transform: scale(1.1);
+    translate: transform 1s ease-in;
+    
+}
+
+.animation-one {
+    position: relative;
+    
+}
+ .first-container-titles{
+    margin-left: 50px;
+    padding-left: 50px;
+} 
+
+.animated-man{
+
+    width: 556px;
+    height: 438px;
+    position: relative;
+    left: 470px;
+    top: 70px;
+
+
+}
+
+.animated-ball {
+    width: 50px;
+    border-radius: 25px;
+    position: relative;
+    bottom: 170px;
+    left: 470px;
+    box-shadow: 10px 2px 20px black;
+
+}
+.first-container:hover .animated-man {
+    transform: rotate(15deg);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in;
+}
+
+.first-container:hover .animated-ball{
+    transform: translate(-400px, -250px);
+    transition: transform 1.3s ease-out 0.1s;
+}
+
+.background-down {
+    width: 350px;
+    height: 350px;
+    margin-right: 150px;
+    margin-top: 50px;
+    border-radius: 0 140px 0 0;
+    box-shadow: 10px 2px 20px black;
+}
+/*------------
+        Middle part Players 
+            ---------------------*/
+.second-container{
+    display: grid;
+    justify-content: center;
+}
+
+    
+
+.players{
+    width: 1050px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 10px;
+  
+}
+
+.player img{
+    width: 315px;
+    padding: 7px;
+}
+.player{
+    width: 330px;
+    height: 474px;
+    margin-top: 10px;
+    box-shadow:1px 1px 10px black;
+}
+.player-name{
+    font-size: 1.2em;
+    font-family: cursive;
+    padding-left: 10px;
+}
+.player-info{
+    text-align: justify;
+    font-family: serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* -------------
+          optional part style 
+                   ----------------  */
+.highlights{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 20px;
+}
+.article{
+    margin: 80px;
+    padding: 20px;
+    color: cornsilk;
+    background-image: url(images/article.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 2px 3px 18px rgb(66, 22, 22);
+} 
+.article-title{
+    text-align: justify;
+    color: cornsilk;
+    text-shadow: 3px 5px 12px rgb(241, 122, 241);
+}
+.article-img img{
+    width: 500px;
+    height: 400px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.article-img:hover{
+    transform: scale(0.7);
+    transition: transform 1s ease-in;
+}
+/*---------
+        last slide's styles 
+                 ---------------*/
+.conclusion img {
+    width: 200px;
+}
+.conclusion{
+    padding-left: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 50px; 
+    
+
+} 
+ .social-buttons{ 
+    position: absolute;
+    transform: translateY(-50%);
+    width: 90%;
+    text-align: center;
+    margin-left: 45px;
+}
+.inner-link{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(231, 216, 216);
+    margin: 10px;
+    border-radius: 25px;
+    box-shadow: 2px 5px 12px -5px black;
+    color: rgb(46, 170, 219);
+    position: relative;
+    overflow: hidden;
+} 
+.inner-link i{
+    line-height: 80px;
+    font-size: 30px;
+    transition: 0.2 linear;
+}  
+.inner-link:hover i{
+    transform: scale(1.4);
+} 
+.rights-container{
+    padding-top: 50px;
+    text-align: center;
+} 
+
+/* media queries */
+
+/* mobile devises */
+
+@media only screen and(max-width:688px) {
+    .first-container{
+        width: 360px;
+    }
+    .article{
+        grid-template-columns: repeat(1);
+    }
+    .player .introduction-one .animation-one .background-container .article{
+        flex-direction: column;
+    }
+    .highlights{
+        width: 360px;
+    }
+}
